@@ -5,7 +5,7 @@ public class EmployeeData
     public static void main(String args[])
     {
         employee_data MyCompany = new employee_data();
-        File Employees = new File("test.txt");
+        File Employees = new File(args[0]);
         try
         {
             Scanner S = new Scanner(Employees);
