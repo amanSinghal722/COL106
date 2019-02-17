@@ -5,9 +5,12 @@ public class EmployeeData
     public static void main(String args[])
     {
         employee_data MyCompany = new employee_data();
-        File Employees = new File(args[0]);
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        System.out.println("Enter the file name with Employee Data:");
         try
         {
+            String file = br.readLine();
+            File Employees = new File(file);
             Scanner S = new Scanner(Employees);
             String N = S.nextLine();
             int NI = Integer.valueOf(N);
