@@ -1,6 +1,6 @@
 import java.io.*;
 import java.util.*;
-public class EmployeeData1
+public class EmployeeData
 {
     public static void main(String args[])
     {
